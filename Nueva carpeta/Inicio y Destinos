@@ -91,9 +91,7 @@
     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4">
       
       <script>
-        // Bucle solo para renderizar las 8 tarjetas idénticas de demostración
       </script>
-      
       <div class="col">
         <div class="card card-destinos p-3 text-center h-100">
           <img src="https://picsum.photos/300/200?mountain" class="card-img-top rounded-3 mb-3" alt="Puerta del Diablo" style="height: 140px; object-fit: cover;">
@@ -189,10 +187,102 @@
           </div>
         </div>
       </div>
+    </div>
 
+  <section id="contacto" class="container my-5">
+    <h1 class="display-5 fw-bold mb-1">¿Necesitas ayuda?</h1>
+    <p class="text-secondary fw-semibold mb-4">Contáctanos mediante nuestros números oficiales</p>
+
+    <div class="row g-4 align-items-stretch">
+      <div class="col-md-6">
+        <div class="bg-custom-light p-4 rounded-4 h-100">
+          <h4 class="fw-bold mb-4">Comunícate desde Centroamérica</h4>
+
+          <div class="mb-3">
+            <h6 class="fw-bold mb-1">El Salvador</h6>
+            <div class="d-flex justify-content-between text-dark fw-semibold small pe-4">
+              <span>• Contact Center</span>
+              <span>+503 7895-6235</span>
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <h6 class="fw-bold mb-1">Guatemala</h6>
+            <div class="d-flex justify-content-between text-dark fw-semibold small pe-4">
+              <span>• Contact Center</span>
+              <span>+502 6935-9874</span>
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <h6 class="fw-bold mb-1">Honduras</h6>
+            <div class="d-flex justify-content-between text-dark fw-semibold small pe-4">
+              <span>• Contact Center</span>
+              <span>+504 9862-6532</span>
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <h6 class="fw-bold mb-1">Nicaragua</h6>
+            <div class="d-flex justify-content-between text-dark fw-semibold small pe-4">
+              <span>• Contact Center</span>
+              <span>+505 9865-2365</span>
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <h6 class="fw-bold mb-1">Panamá</h6>
+            <div class="d-flex justify-content-between text-dark fw-semibold small pe-4">
+              <span>• Contact Center</span>
+              <span>+507 9876-6545</span>
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <h6 class="fw-bold mb-1">Costa Rica</h6>
+            <div class="d-flex justify-content-between text-dark fw-semibold small pe-4">
+              <span>• Contact Center</span>
+              <span>+506 7895-5654</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="card card-destinos border-custom-blue rounded-4 overflow-hidden h-100">
+          <img src="https://picsum.photos/600/350?callcenter" class="card-img-top" alt="Centro de ayuda" style="height: 260px; object-fit: cover;">
+          <div class="card-body text-center p-4">
+            <h3 class="fw-bold mb-3">Centro de Ayuda</h3>
+            <p class="fw-semibold text-dark fs-5 px-3">
+              Consulta información útil y las preguntas frecuentes de nuestros clientes, antes, durante y después del vuelo.
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
+  <hr class="my-5">
+
+  <section id="desarrolladores" class="container my-5">
+    <h1 class="display-4 fw-bold mb-4">DESARROLLADORES</h1>
+
+    <div class="d-flex flex-column gap-4">
+      <div class="card card-developer p-4 shadow-sm position-relative overflow-hidden">
+        <div class="row align-items-center">
+          <div class="col">
+            <h4 class="fw-bold mb-0">Néstor Eduardo Villalobos Orellana</h4>
+          </div>
+          <div class="col-auto">
+            <img src="https://picsum.photos/250/150?landscape" class="rounded-3" alt="Foto desarrollador" style="width: 220px; height: 130px; object-fit: cover;">
+          </div>
+        </div>
+      </div>
+
+      <div class="card card-developer border-custom-blue p-4 shadow-sm">
+      </div>
+    </div>
+  </section>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
