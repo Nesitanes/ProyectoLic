@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sitio de Viajes</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  
+  <style>
+    .bg-navbar { background-color: #3b5998; }
+    .nav-link.active-tab { background-color: #8da4c4; color: #fff !important; border-radius: 4px; }
+    .hero-section {
+      background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('https://picsum.photos/1200/400?airplane') center/cover;
+      padding: 80px 20px;
+    }
+    .card-destinos { background-color: #d0e8ff; border: none; border-radius: 12px; }
+    .overlay-tag {
+      background-color: #e0e0e0;
+      opacity: 0.9;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body class="bg-light">
+
+  <nav class="navbar navbar-expand-lg bg-navbar navbar-dark py-3">
+    <div class="container justify-content-end">
+      <ul class="navbar-nav flex-row gap-3 fw-semibold">
+        <li class="nav-item"><a class="nav-link active-tab px-3 text-white" href="#inicio">INICIO</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#">DESTINOS</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#">PRESUPUESTO</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#favoritos">FAVORITOS</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#">CONTACTO</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#">DESARROLLADORES</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section id="inicio" class="mb-5">
+    <div class="hero-section text-center">
+      <div class="container my-4">
+        <div class="row justify-content-center">
+          <div class="col-md-8 d-flex gap-2">
+            <input type="text" class="form-control form-control-lg rounded-pill" placeholder="">
+            <button class="btn btn-info text-dark fw-bold px-4 rounded-pill text-nowrap">BUSCAR DESTINO</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container my-5">
+      <h2 class="fw-bold mb-4">Los destinos más buscados</h2>
+      <div class="row g-4">
+        
+        <div class="col-md-4">
+          <div class="card border-0 rounded-4 overflow-hidden shadow-sm position-relative">
+            <img src="https://picsum.photos/400/300?beach" class="card-img-top" alt="El Tunco" style="height: 250px; object-fit: cover;">
+            <div class="position-absolute bottom-0 start-0 end-0 p-3">
+              <div class="overlay-tag p-2 px-3 fw-bold text-dark">EL TUNCO</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card border-0 rounded-4 overflow-hidden shadow-sm position-relative">
+            <img src="https://picsum.photos/400/300?coast" class="card-img-top" alt="Santa Marta" style="height: 250px; object-fit: cover;">
+            <div class="position-absolute bottom-0 start-0 end-0 p-3">
+              <div class="overlay-tag p-2 px-3 fw-bold text-dark">SANTA MARTA</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card border-0 rounded-4 overflow-hidden shadow-sm position-relative">
+            <img src="https://picsum.photos/400/300?city" class="card-img-top" alt="Cartagena" style="height: 250px; object-fit: cover;">
+            <div class="position-absolute bottom-0 start-0 end-0 p-3">
+              <div class="overlay-tag p-2 px-3 fw-bold text-dark">CARTAGENA</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <hr class="my-5">
+  <section id="favoritos" class="container my-5">
+    <h2 class="fw-bold mb-4">Tus destinos favoritos</h2>
+    
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4">
+      
+      <script>
+      </script>
+      <div class="col">
+        <div class="card card-destinos p-3 text-center h-100">
+          <img src="https://picsum.photos/300/200?mountain" class="card-img-top rounded-3 mb-3" alt="Puerta del Diablo" style="height: 140px; object-fit: cover;">
+          <h5 class="fw-bold mb-1">Puerta del Diablo</h5>
+          <p class="text-muted small mb-3">Una formación rocosa y sitio turístico localizado en el distrito de Panchimalco</p>
+          <div class="mt-auto text-start d-flex align-items-center gap-1 text-dark small">
+            <i class="bi bi-heart fs-6"></i>
+            <span>Añadir a favoritos</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card card-destinos p-3 text-center h-100">
+          <img src="https://picsum.photos/300/200?mountain" class="card-img-top rounded-3 mb-3" alt="Puerta del Diablo" style="height: 140px; object-fit: cover;">
+          <h5 class="fw-bold mb-1">Puerta del Diablo</h5>
+          <p class="text-muted small mb-3">Una formación rocosa y sitio turístico localizado en el distrito de Panchimalco</p>
+          <div class="mt-auto text-start d-flex align-items-center gap-1 text-dark small">
+            <i class="bi bi-heart fs-6"></i>
+            <span>Añadir a favoritos</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card card-destinos p-3 text-center h-100">
+          <img src="https://picsum.photos/300/200?mountain" class="card-img-top rounded-3 mb-3" alt="Puerta del Diablo" style="height: 140px; object-fit: cover;">
+          <h5 class="fw-bold mb-1">Puerta del Diablo</h5>
+          <p class="text-muted small mb-3">Una formación rocosa y sitio turístico localizado en el distrito de Panchimalco</p>
+          <div class="mt-auto text-start d-flex align-items-center gap-1 text-dark small">
+            <i class="bi bi-heart fs-6"></i>
+            <span>Añadir a favoritos</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card card-destinos p-3 text-center h-100">
+          <img src="https://picsum.photos/300/200?mountain" class="card-img-top rounded-3 mb-3" alt="Puerta del Diablo" style="height: 140px; object-fit: cover;">
+          <h5 class="fw-bold mb-1">Puerta del Diablo</h5>
+          <p class="text-muted small mb-3">Una formación rocosa y sitio turístico localizado en el distrito de Panchimalco</p>
+          <div class="mt-auto text-start d-flex align-items-center gap-1 text-dark small">
+            <i class="bi bi-heart fs-6"></i>
+            <span>Añadir a favoritos</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card card-destinos p-3 text-center h-100">
+          <img src="https://picsum.photos/300/200?mountain" class="card-img-top rounded-3 mb-3" alt="Puerta del Diablo" style="height: 140px; object-fit: cover;">
+          <h5 class="fw-bold mb-1">Puerta del Diablo</h5>
+          <p class="text-muted small mb-3">Una formación rocosa y sitio turístico localizado en el distrito de Panchimalco</p>
+          <div class="mt-auto text-start d-flex align-items-center gap-1 text-dark small">
+            <i class="bi bi-heart fs-6"></i>
+            <span>Añadir a favoritos</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card card-destinos p-3 text-center h-100">
+          <img src="https://picsum.photos/300/200?mountain" class="card-img-top rounded-3 mb-3" alt="Puerta del Diablo" style="height: 140px; object-fit: cover;">
+          <h5 class="fw-bold mb-1">Puerta del Diablo</h5>
+          <p class="text-muted small mb-3">Una formación rocosa y sitio turístico localizado en el distrito de Panchimalco</p>
+          <div class="mt-auto text-start d-flex align-items-center gap-1 text-dark small">
+            <i class="bi bi-heart fs-6"></i>
+            <span>Añadir a favoritos</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card card-destinos p-3 text-center h-100">
+          <img src="https://picsum.photos/300/200?mountain" class="card-img-top rounded-3 mb-3" alt="Puerta del Diablo" style="height: 140px; object-fit: cover;">
+          <h5 class="fw-bold mb-1">Puerta del Diablo</h5>
+          <p class="text-muted small mb-3">Una formación rocosa y sitio turístico localizado en el distrito de Panchimalco</p>
+          <div class="mt-auto text-start d-flex align-items-center gap-1 text-dark small">
+            <i class="bi bi-heart fs-6"></i>
+            <span>Añadir a favoritos</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card card-destinos p-3 text-center h-100">
+          <img src="https://picsum.photos/300/200?mountain" class="card-img-top rounded-3 mb-3" alt="Puerta del Diablo" style="height: 140px; object-fit: cover;">
+          <h5 class="fw-bold mb-1">Puerta del Diablo</h5>
+          <p class="text-muted small mb-3">Una formación rocosa y sitio turístico localizado en el distrito de Panchimalco</p>
+          <div class="mt-auto text-start d-flex align-items-center gap-1 text-dark small">
+            <i class="bi bi-heart fs-6"></i>
+            <span>Añadir a favoritos</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <section id="contacto" class="container my-5">
+    <h1 class="display-5 fw-bold mb-1">¿Necesitas ayuda?</h1>
+    <p class="text-secondary fw-semibold mb-4">Contáctanos mediante nuestros números oficiales</p>
+
+    <div class="row g-4 align-items-stretch">
+      <div class="col-md-6">
+        <div class="bg-custom-light p-4 rounded-4 h-100">
+          <h4 class="fw-bold mb-4">Comunícate desde Centroamérica</h4>
+
+          <div class="mb-3">
+            <h6 class="fw-bold mb-1">El Salvador</h6>
+            <div class="d-flex justify-content-between text-dark fw-semibold small pe-4">
+              <span>• Contact Center</span>
+              <span>+503 7895-6235</span>
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <h6 class="fw-bold mb-1">Guatemala</h6>
+            <div class="d-flex justify-content-between text-dark fw-semibold small pe-4">
+              <span>• Contact Center</span>
+              <span>+502 6935-9874</span>
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <h6 class="fw-bold mb-1">Honduras</h6>
+            <div class="d-flex justify-content-between text-dark fw-semibold small pe-4">
+              <span>• Contact Center</span>
+              <span>+504 9862-6532</span>
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <h6 class="fw-bold mb-1">Nicaragua</h6>
+            <div class="d-flex justify-content-between text-dark fw-semibold small pe-4">
+              <span>• Contact Center</span>
+              <span>+505 9865-2365</span>
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <h6 class="fw-bold mb-1">Panamá</h6>
+            <div class="d-flex justify-content-between text-dark fw-semibold small pe-4">
+              <span>• Contact Center</span>
+              <span>+507 9876-6545</span>
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <h6 class="fw-bold mb-1">Costa Rica</h6>
+            <div class="d-flex justify-content-between text-dark fw-semibold small pe-4">
+              <span>• Contact Center</span>
+              <span>+506 7895-5654</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="card card-destinos border-custom-blue rounded-4 overflow-hidden h-100">
+          <img src="https://picsum.photos/600/350?callcenter" class="card-img-top" alt="Centro de ayuda" style="height: 260px; object-fit: cover;">
+          <div class="card-body text-center p-4">
+            <h3 class="fw-bold mb-3">Centro de Ayuda</h3>
+            <p class="fw-semibold text-dark fs-5 px-3">
+              Consulta información útil y las preguntas frecuentes de nuestros clientes, antes, durante y después del vuelo.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="my-5">
+
+  <section id="desarrolladores" class="container my-5">
+    <h1 class="display-4 fw-bold mb-4">DESARROLLADORES</h1>
+
+    <div class="d-flex flex-column gap-4">
+      <div class="card card-developer p-4 shadow-sm position-relative overflow-hidden">
+        <div class="row align-items-center">
+          <div class="col">
+            <h4 class="fw-bold mb-0">Néstor Eduardo Villalobos Orellana</h4>
+          </div>
+          <div class="col-auto">
+            <img src="https://picsum.photos/250/150?landscape" class="rounded-3" alt="Foto desarrollador" style="width: 220px; height: 130px; object-fit: cover;">
+          </div>
+        </div>
+      </div>
+
+      <div class="card card-developer border-custom-blue p-4 shadow-sm">
+      </div>
+    </div>
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

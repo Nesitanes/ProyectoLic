@@ -1,0 +1,27 @@
+/* ==========================================================================
+   AJUSTES PERSONALIZADOS (Complemento a Bootstrap 5)
+   ========================================================================== */
+
+/* Asegurar que el pie de página siempre quede al final de la pantalla */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f8f9fa; /* Fondo gris muy claro */
+}
+
+/* Transición suave para las tarjetas de lugares turísticos */
+.places-section .card {
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.places-section .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Ajuste de altura para las imágenes de los destinos turísticos */
+.card-img-top-custom {
+    height: 200px;
+    object-fit: cover;
+}
