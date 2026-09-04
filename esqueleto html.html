@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planificador de Viajes Interactivo</title>
+    <!-- Hojas de estilo y tipografías -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+    <!-- Segmento de Encabezado -->
+    <header class="main-header">
+        <div class="logo-container">
+            <a href="index.html"><img src="assets/img/logo.png" alt="Logo Planificador" id="site-logo"></a>
+        </div>
+        <nav class="main-nav">
+            <ul class="nav-list">
+                <li><a href="index.html" class="nav-link">Inicio</a></li>
+                <li><a href="destinos.html" class="nav-link">Destinos</a></li>
+                <li><a href="presupuesto.html" class="nav-link">Presupuesto</a></li>
+                <li><a href="favoritos.html" class="nav-link">Favoritos</a></li>
+                <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+                <li><a href="desarrolladores.html" class="nav-link">Desarrolladores</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Área de Contenido Principal -->
+    <main class="main-content" id="app-container">
+        <!-- Búsqueda dinámica -->
+        <section class="search-section">
+            <form id="search-form" class="search-form">
+                <input type="text" id="country-input" placeholder="Ingrese un país (ej. El Salvador, Japón)..." required>
+                <button type="submit" id="search-btn">Buscar Destino</button>
+            </form>
+        </section>
+
+        <!-- Resultados dinámicos (Poblados mediante JS / API REST) -->
+        <section class="results-section" id="results-container">
+            <!-- Ficha del País -->
+            <article class="country-card" id="country-info">
+                <!-- Se inyecta con JS -->
+            </article>
+
+            <!-- Clima en tiempo real -->
+            <article class="weather-card" id="weather-info">
+                <!-- Se inyecta con JS -->
+            </article>
+        </section>
+
+        <!-- Lugares turísticos dinámicos (JSON) -->
+        <section class="places-section" id="places-container">
+            <h2>Lugares Turísticos Destacados</h2>
+            <div class="places-grid" id="places-grid">
+                <!-- Contenido dinámico -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Segmento Pie de Página -->
+    <footer class="main-footer">
+        <div class="footer-content">
+            <p>&copy; 2026 - Proyecto de Cátedra | Lenguajes Interpretados en el Cliente</p>
+            <p>Universidad Don Bosco</p>
+        </div>
+    </footer>
+
+    <!-- Scripts JavaScript -->
+    <script src="assets/js/main.js" type="module"></script>
+</body>
+</html>
