@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PVI.com - Destinos</title>
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Estilos Personalizados -->
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+
+  <!-- BARRA DE NAVEGACIÓN -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-navy sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold fs-3" href="index.html">PVI.com</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto text-uppercase">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link " href="destinos.html">Destinos</a></li>
+          <li class="nav-item"><a class="nav-link" href="presupuesto.html">Presupuesto</a></li>
+          <li class="nav-item"><a class="nav-link" href="favoritos.html">Favoritos</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+          <li class="nav-item"><a class="nav-link" href="desarrolladores.html">Desarrolladores</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- BANNER BUSCADOR DE DESTINOS -->
+  <header class="hero-section text-white d-flex align-items-center hero-small">
+    <div class="overlay"></div>
+    <div class="container position-relative text-center text-lg-start">
+      <h1 class="h2 fw-bold mb-3">Hacemos tus viajes y<br>tus sueños posibles</h1>
+      <div class="row justify-content-center justify-content-lg-start">
+        <div class="col-12 col-md-10 col-lg-8">
+          <div class="input-group search-box">
+            <input type="text" class="form-control rounded-pill-start border-0 px-4" placeholder="Escribe tu destino preferido..." value="El Salvador">
+            <button class="btn btn-info text-navy fw-bold px-4 rounded-pill-end" type="button">BUSCAR DESTINO</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- CONTENIDO PRINCIPAL DE DESTINOS -->
+  <main class="py-5 bg-light">
+    <div class="container">
+      <div class="row g-4">
+
+        <!-- COLUMNA IZQUIERDA: INFORMACIÓN PAÍS Y CLIMA -->
+        <div class="col-12 col-lg-4">
+          <!-- Tarjeta de Información General -->
+          <div class="card border-0 shadow-sm rounded-4 p-4 mb-4 bg-white">
+            <h2 class="h3 fw-bold mb-3">El Salvador</h2>
+            
+            <div class="country-info small text-secondary mb-3">
+              <p class="mb-1"><strong class="text-dark">Capital:</strong> San Salvador</p>
+              <p class="mb-1"><strong class="text-dark">Moneda:</strong> Dólar estadounidense</p>
+              <p class="mb-1"><strong class="text-dark">Superficie:</strong> 21,041 km²</p>
+              <p class="mb-1"><strong class="text-dark">Idioma:</strong> Español</p>
+            </div>
+
+            <div class="flag-container mt-2">
+              <span class="fw-bold d-block mb-2 small text-dark">Bandera:</span>
+              <img src="https://flagcdn.com/w320/sv.png" alt="Bandera El Salvador" class="img-fluid rounded border w-100">
+            </div>
+          </div>
+
+          <!-- Tarjeta del Clima -->
+          <div class="card border-0 shadow-sm rounded-4 p-4 bg-white">
+            <h3 class="h4 fw-bold mb-3">Clima</h3>
+            <div class="d-flex align-items-center mb-3">
+              <span class="display-5 fw-bold me-3">30°</span>
+              <div>
+                <p class="fw-bold mb-0">Miércoles, 1:00 p.m.</p>
+                <p class="text-muted mb-0 small">Mayormente soleado</p>
+              </div>
+            </div>
+
+            <div class="row text-center border-top border-bottom py-2 mb-3 small">
+              <div class="col-6 border-end">
+                <span class="text-muted d-block">Humedad</span>
+                <strong>10%</strong>
+              </div>
+              <div class="col-6">
+                <span class="text-muted d-block">Viento</span>
+                <strong>a 5 km/h</strong>
+              </div>
+            </div>
+
+            <!-- Pronóstico semanal -->
+            <div class="d-flex justify-content-between text-center small">
+              <div>
+                <span class="d-block text-muted">mié</span>
+                <i class="fa-solid fa-sun text-warning my-1"></i>
+                <span class="d-block fw-bold">30°</span>
+                <span class="text-muted">20°</span>
+              </div>
+              <div>
+                <span class="d-block text-muted">jue</span>
+                <i class="fa-solid fa-cloud-sun text-warning my-1"></i>
+                <span class="d-block fw-bold">28°</span>
+                <span class="text-muted">19°</span>
+              </div>
+              <div>
+                <span class="d-block text-muted">vie</span>
+                <i class="fa-solid fa-sun text-warning my-1"></i>
+                <span class="d-block fw-bold">30°</span>
+                <span class="text-muted">20°</span>
+              </div>
+              <div>
+                <span class="d-block text-muted">sáb</span>
+                <i class="fa-solid fa-cloud-rain text-primary my-1"></i>
+                <span class="d-block fw-bold">30°</span>
+                <span class="text-muted">20°</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- COLUMNA DERECHA: LUGARES TURÍSTICOS QUE VISITAR -->
+        <div class="col-12 col-lg-8">
+          <h2 class="h3 fw-bold mb-4">Lugares turísticos que visitar</h2>
+          
+          <div class="row g-3">
+            <!-- Lugar 1 -->
+            <div class="col-12 col-md-6">
+              <div class="card card-spot border-0 shadow-sm rounded-4 overflow-hidden h-100">
+                <div class="row g-0 h-100">
+                  <div class="col-5">
+                    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=400&q=80" class="img-fluid rounded-start h-100 object-fit-cover" alt="El Tunco">
+                  </div>
+                  <div class="col-7 p-3 d-flex flex-column justify-content-between">
+                    <div>
+                      <h5 class="fw-bold mb-1">El Tunco</h5>
+                      <p class="text-muted small mb-2">Famoso pueblo costero y destino de surf en La Libertad.</p>
+                    </div>
+                    <button class="btn btn-link text-decoration-none p-0 text-navy fw-semibold small text-start">
+                      <i class="fa-regular fa-heart me-1"></i> Añadir a favoritos
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Lugar 2 -->
+            <div class="col-12 col-md-6">
+              <div class="card card-spot border-0 shadow-sm rounded-4 overflow-hidden h-100">
+                <div class="row g-0 h-100">
+                  <div class="col-5">
+                    <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=400&q=80" class="img-fluid rounded-start h-100 object-fit-cover" alt="Volcán Santa Ana">
+                  </div>
+                  <div class="col-7 p-3 d-flex flex-column justify-content-between">
+                    <div>
+                      <h5 class="fw-bold mb-1">Volcán Santa Ana</h5>
+                      <p class="text-muted small mb-2">Senderismo e impresionantes vistas volcánicas y lago cráter.</p>
+                    </div>
+                    <button class="btn btn-link text-decoration-none p-0 text-navy fw-semibold small text-start">
+                      <i class="fa-regular fa-heart me-1"></i> Añadir a favoritos
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Lugar 3 -->
+            <div class="col-12 col-md-6">
+              <div class="card card-spot border-0 shadow-sm rounded-4 overflow-hidden h-100">
+                <div class="row g-0 h-100">
+                  <div class="col-5">
+                    <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=400&q=80" class="img-fluid rounded-start h-100 object-fit-cover" alt="Puerta del Diablo">
+                  </div>
+                  <div class="col-7 p-3 d-flex flex-column justify-content-between">
+                    <div>
+                      <h5 class="fw-bold mb-1">Puerta del Diablo</h5>
+                      <p class="text-muted small mb-2">Formación rocosa y sitio turístico en Panchimalco.</p>
+                    </div>
+                    <button class="btn btn-link text-decoration-none p-0 text-navy fw-semibold small text-start">
+                      <i class="fa-regular fa-heart me-1"></i> Añadir a favoritos
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Lugar 4 -->
+            <div class="col-12 col-md-6">
+              <div class="card card-spot border-0 shadow-sm rounded-4 overflow-hidden h-100">
+                <div class="row g-0 h-100">
+                  <div class="col-5">
+                    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=400&q=80" class="img-fluid rounded-start h-100 object-fit-cover" alt="Playa El Tunco">
+                  </div>
+                  <div class="col-7 p-3 d-flex flex-column justify-content-between">
+                    <div>
+                      <h5 class="fw-bold mb-1">El Tunco</h5>
+                      <p class="text-muted small mb-2">Pueblo costero ideal para atardeceres y deportes marinos.</p>
+                    </div>
+                    <button class="btn btn-link text-decoration-none p-0 text-navy fw-semibold small text-start">
+                      <i class="fa-regular fa-heart me-1"></i> Añadir a favoritos
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Lugar 5 -->
+            <div class="col-12 col-md-6">
+              <div class="card card-spot border-0 shadow-sm rounded-4 overflow-hidden h-100">
+                <div class="row g-0 h-100">
+                  <div class="col-5">
+                    <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=400&q=80" class="img-fluid rounded-start h-100 object-fit-cover" alt="El Tunco">
+                  </div>
+                  <div class="col-7 p-3 d-flex flex-column justify-content-between">
+                    <div>
+                      <h5 class="fw-bold mb-1">El Tunco</h5>
+                      <p class="text-muted small mb-2">Famoso pueblo costero y destino de surf en La Libertad.</p>
+                    </div>
+                    <button class="btn btn-link text-decoration-none p-0 text-navy fw-semibold small text-start">
+                      <i class="fa-regular fa-heart me-1"></i> Añadir a favoritos
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Lugar 6 -->
+            <div class="col-12 col-md-6">
+              <div class="card card-spot border-0 shadow-sm rounded-4 overflow-hidden h-100">
+                <div class="row g-0 h-100">
+                  <div class="col-5">
+                    <img src="https://images.unsplash.com/photo-1583997051654-7fdfafc975b6?auto=format&fit=crop&w=400&q=80" class="img-fluid rounded-start h-100 object-fit-cover" alt="El Tunco">
+                  </div>
+                  <div class="col-7 p-3 d-flex flex-column justify-content-between">
+                    <div>
+                      <h5 class="fw-bold mb-1">El Tunco</h5>
+                      <p class="text-muted small mb-2">Famoso pueblo costero y destino de surf en La Libertad.</p>
+                    </div>
+                    <button class="btn btn-link text-decoration-none p-0 text-navy fw-semibold small text-start">
+                      <i class="fa-regular fa-heart me-1"></i> Añadir a favoritos
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-navy text-white py-4 mt-auto">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+      <div class="d-flex align-items-center gap-3">
+        <span class="fw-semibold">Síguenos</span>
+        <a href="#" class="text-white fs-5"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#" class="text-white fs-5"><i class="fa-brands fa-linkedin"></i></a>
+      </div>
+      <div>
+        <a href="#" class="text-white text-decoration-none fw-semibold">Ir al inicio <i class="fa-solid fa-arrow-up ms-1"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

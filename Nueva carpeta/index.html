@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PVI.com - Inicio</title>
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- FontAwesome para íconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Estilos Personalizados -->
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+
+  <!-- BARRA DE NAVEGACIÓN -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-navy sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold fs-3" href="index.html">PVI</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto text-uppercase">
+          <li class="nav-item"><a class="nav-link active fw-semibold" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="destinos.html">Destinos</a></li>
+          <li class="nav-item"><a class="nav-link" href="presupuesto.html">Presupuesto</a></li>
+          <li class="nav-item"><a class="nav-link" href="favoritos.html">Favoritos</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+          <li class="nav-item"><a class="nav-link" href="desarrolladores.html">Desarrolladores</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION (BANNER PRINCIPAL) -->
+  <header class="hero-section text-white d-flex align-items-center">
+    <div class="overlay"></div>
+    <div class="container position-relative text-center text-lg-start">
+      <h1 class="display-4 fw-bold mb-4">Hacemos tus viajes y<br>tus sueños posibles</h1>
+      
+      <!-- Buscador -->
+      <div class="row justify-content-center justify-content-lg-start">
+        <div class="col-12 col-md-10 col-lg-8">
+          <div class="input-group input-group-lg search-box">
+            <input type="text" class="form-control rounded-pill-start border-0 px-4" placeholder="Escribe tu destino preferido...">
+            <button class="btn btn-info text-navy fw-bold px-4 rounded-pill-end" type="button">BUSCAR DESTINO</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- SECCIÓN: DESTINOS MÁS BUSCADOS -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2 class="h4 fw-bold mb-0">Los destinos más buscados, recomendados para ti</h2>
+        <a href="destinos.html" class="text-decoration-none fw-semibold text-primary">Explora más opciones &rarr;</a>
+      </div>
+
+      <div class="row g-4">
+        <!-- Tarjeta 1: El Tunco -->
+        <div class="col-12 col-md-6 col-lg-6">
+          <div class="card destination-card border-0 shadow-sm text-white overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80" class="card-img" alt="El Tunco">
+            <div class="card-img-overlay d-flex align-items-end p-0">
+              <div class="card-footer-custom w-100 p-3">
+                <h5 class="card-title mb-0 fw-bold">EL TUNCO</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tarjeta 2: Santa Marta -->
+        <div class="col-12 col-md-6 col-lg-6">
+          <div class="card destination-card border-0 shadow-sm text-white overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80" class="card-img" alt="Santa Marta">
+            <div class="card-img-overlay d-flex align-items-end p-0">
+              <div class="card-footer-custom w-100 p-3">
+                <h5 class="card-title mb-0 fw-bold">SANTA MARTA</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tarjeta 3: Cartagena -->
+        <div class="col-12 col-md-6 col-lg-6">
+          <div class="card destination-card border-0 shadow-sm text-white overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1583997051654-7fdfafc975b6?auto=format&fit=crop&w=800&q=80" class="card-img" alt="Cartagena">
+            <div class="card-img-overlay d-flex align-items-end p-0">
+              <div class="card-footer-custom w-100 p-3">
+                <h5 class="card-title mb-0 fw-bold">CARTAGENA</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tarjeta 4: El Tunco 2 -->
+        <div class="col-12 col-md-6 col-lg-6">
+          <div class="card destination-card border-0 shadow-sm text-white overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80" class="card-img" alt="El Tunco">
+            <div class="card-img-overlay d-flex align-items-end p-0">
+              <div class="card-footer-custom w-100 p-3">
+                <h5 class="card-title mb-0 fw-bold">EL TUNCO</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN: DESCUBRE -->
+  <section class="py-5">
+    <div class="container">
+      <h2 class="h4 fw-bold mb-4">Descubre</h2>
+      <div class="row g-4">
+        <!-- Card 1 -->
+        <div class="col-12 col-md-4">
+          <div class="card h-100 border rounded-3 shadow-sm">
+            <img src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?auto=format&fit=crop&w=500&q=80" class="card-img-top" alt="Restricciones de viaje">
+            <div class="card-body">
+              <h5 class="card-title fw-bold fs-6">Latest travel restrictions</h5>
+              <p class="card-text text-muted small">We provide information on the entry requirements for all countries so you can plan your flight smoothly.</p>
+            </div>
+            <div class="card-footer bg-transparent border-0 text-end pe-3 pb-3">
+              <i class="fa-solid fa-arrow-right text-muted"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-12 col-md-4">
+          <div class="card h-100 border rounded-3 shadow-sm">
+            <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=500&q=80" class="card-img-top" alt="App móvil">
+            <div class="card-body">
+              <h5 class="card-title fw-bold fs-6">Install our mobile app</h5>
+              <p class="card-text text-muted small">Our mobile app provides real-time information when you are at the airport.</p>
+            </div>
+            <div class="card-footer bg-transparent border-0 text-end pe-3 pb-3">
+              <i class="fa-solid fa-arrow-right text-muted"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-12 col-md-4">
+          <div class="card h-100 border rounded-3 shadow-sm">
+            <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=500&q=80" class="card-img-top" alt="Destinos hermosos">
+            <div class="card-body">
+              <h5 class="card-title fw-bold fs-6">The most beautiful destinations</h5>
+              <p class="card-text text-muted small">Have you ever considered visiting Easter Island or Alaska? These are the most unique destinations.</p>
+            </div>
+            <div class="card-footer bg-transparent border-0 text-end pe-3 pb-3">
+              <i class="fa-solid fa-arrow-right text-muted"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-navy text-white py-4 mt-auto">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+      <div class="d-flex align-items-center gap-3">
+        <span class="fw-semibold">Síguenos</span>
+        <a href="#" class="text-white fs-5"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#" class="text-white fs-5"><i class="fa-brands fa-linkedin"></i></a>
+      </div>
+      <div>
+        <a href="#" class="text-white text-decoration-none fw-semibold">Ir al inicio <i class="fa-solid fa-arrow-up ms-1"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
