@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PVI - Favoritos</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">INICIO</a>
+            <a href="destinos.html">DESTINOS</a>
+            <a href="presupuesto.html">PRESUPUESTO</a>
+            <a href="favoritos.html">FAVORITOS</a>
+            <a href="contacto.html">CONTACTO</a>
+            <a href="#" id="open-flights-cart" style="font-weight: bold; color: #b3d9ff;"> VUELOS (<span id="cart-counter">0</span>)</a>
+            </nav>
+    </header>
+
+    <main>
+        <h2>Tus destinos favoritos</h2>
+        <div class="cards-grid" id="favorites-container">
+            <!-- Cargado por JavaScript mediante localStorage -->
+        </div>
+    </main>
+
+    <footer>
+        <p>Síguenos</p>
+        <div class="social-icons"><a href="#">f</a><a href="#">📷</a><a href="#">🐦</a><a href="#">▶</a><a href="#">in</a></div>
+        <button class="scroll-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">Ir al inicio ↑</button>
+    </footer>
+    <script src="js/paises-data.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PVI - Presupuesto</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+       <nav>
+            <a href="index.html">INICIO</a>
+            <a href="destinos.html">DESTINOS</a>
+            <a href="presupuesto.html">PRESUPUESTO</a>
+            <a href="favoritos.html">FAVORITOS</a>
+            <a href="contacto.html">CONTACTO</a>
+            <a href="#" id="open-flights-cart" style="font-weight: bold; color: #b3d9ff;"> VUELOS (<span id="cart-counter">0</span>)</a>
+            </nav>
+    </header>
+
+    <main>
+        <section style="margin-bottom: 2.5rem;">
+            <h2>¿Tienes un presupuesto?</h2>
+            <p>Dinos tu presupuesto y te recomendamos las mejores opciones</p>
+            <div style="display: flex; gap: 1rem; margin-top: 1rem;">
+                <input type="number" id="user-budget" placeholder="Escribe tu presupuesto ($)..." style="padding: 0.75rem; border-radius: 8px; border: 1px solid #ccc; flex: 1;">
+                <select id="budget-type" style="padding: 0.75rem; border-radius: 8px; border: 1px solid #ccc;">
+                    <option value="nacional">Nacional</option>
+                    <option value="internacional">Internacional</option>
+                </select>
+                <button id="calc-budget-btn" style="background:#b3d9ff; border:none; padding: 0.75rem 1.5rem; border-radius: 8px; font-weight: 600; cursor: pointer;">BUSCAR DESTINO</button>
+            </div>
+            <div id="budget-results" style="margin-top: 1rem;"></div>
+        </section>
+
+        <section class="info-card">
+            <h2>O te ayudamos a crearlo</h2>
+            <form id="create-budget-form" style="display: flex; flex-direction: column; gap: 1rem;">
+                <div style="display: flex; gap: 1rem;">
+                    <label><input type="radio" name="trip-type" value="ida-vuelta" checked> Ida y vuelta</label>
+                    <label><input type="radio" name="trip-type" value="solo-ida"> Solo ida</label>
+                </div>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                    <input type="text" id="origin" placeholder="Origen (ej. San Salvador)" value="San Salvador, El Salvador" required style="padding: 0.75rem; border-radius: 8px; border: 1px solid #ccc;">
+                    <input type="text" id="dest" placeholder="Destino (País o Ciudad)" required style="padding: 0.75rem; border-radius: 8px; border: 1px solid #ccc;">
+                </div>
+                <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1rem;">
+                    <div>
+                        <label>Salida:</label>
+                        <input type="date" id="departure-date" required style="width: 100%; padding: 0.75rem; border-radius: 8px; border: 1px solid #ccc;">
+                    </div>
+                    <div id="return-date-container">
+                        <label>Regreso:</label>
+                        <input type="date" id="return-date" style="width: 100%; padding: 0.75rem; border-radius: 8px; border: 1px solid #ccc;">
+                    </div>
+                    <div>
+                        <label>Pasajeros:</label>
+                        <input type="number" id="passengers" value="1" min="1" style="width: 100%; padding: 0.75rem; border-radius: 8px; border: 1px solid #ccc;">
+                    </div>
+                </div>
+                <button type="submit" style="background-color: #2c4782; color: white; border: none; padding: 1rem; border-radius: 8px; font-weight: 600; cursor: pointer;">Crear Presupuesto</button>
+            </form>
+            <div id="generated-budget-result" style="margin-top: 1.5rem; font-weight: bold; font-size: 1.1rem;"></div>
+        </section>
+    </main>
+
+    <!-- Menú Lateral Derecho de Vuelos Seleccionados -->
+<div id="flight-drawer" class="flight-drawer">
+    <div class="drawer-header">
+    <h3>Tu Vuelo Seleccionado</h3>
+    <button class="close-drawer-btn">&times;</button>
+</div>
+    <div class="drawer-body" id="drawer-content">
+        <p>No hay ningún vuelo seleccionado todavía.</p>
+    </div>
+    <div class="drawer-footer" id="drawer-footer" style="display: none;">
+        <button id="confirm-purchase-btn" class="confirm-btn">Confirmar Compra</button>
+    </div>
+</div>
+<div id="drawer-overlay" class="drawer-overlay"></div>
+
+    <footer>
+        <p>Síguenos</p>
+        <div class="social-icons"><a href="#">f</a><a href="#">📷</a><a href="#">🐦</a><a href="#">▶</a><a href="#">in</a></div>
+        <button class="scroll-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">Ir al inicio ↑</button>
+    </footer>
+    <script src="js/app.js"></script>
+    <script src="js/paises-data.js"></script>
+</body>
+</html>
