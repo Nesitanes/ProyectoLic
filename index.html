@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PVI - Inicio</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+       <nav>
+            <a href="index.html">INICIO</a>
+            <a href="destinos.html">DESTINOS</a>
+            <a href="presupuesto.html">PRESUPUESTO</a>
+            <a href="favoritos.html">FAVORITOS</a>
+            <a href="contacto.html">CONTACTO</a>
+            <a href="#" id="open-flights-cart" style="font-weight: bold; color: #b3d9ff;">VUELOS (<span id="cart-counter">0</span>)</a>
+        </nav>
+    </header>
+
+    <div class="hero-banner">
+        <h1>Hacemos tus viajes y tus sueños posibles</h1>
+        <div class="search-box">
+            <input type="text" id="global-search" placeholder="Buscar destino...">
+            <button id="search-btn">BUSCAR DESTINO</button>
+        </div>
+    </div>
+
+    <main>
+        <h2>Los destinos más buscados, recomendados para ti</h2>
+        <div class="cards-grid" id="recommended-container">
+            <!-- Se cargan dinámicamente o estáticas -->
+            <div class="card">
+                <img src="img/elsalvador/eltunco.jpg" alt="El Tunco">
+                <div class="card-body">
+                    <h3>El Tunco</h3>
+                    <p>Famoso pueblo costero y destino de surf en La Libertad.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/santamarta.jpg" alt="Santa Marta">
+                <div class="card-body">
+                    <h3>Santa Marta</h3>
+                    <p>Hermosas playas caribeñas e historia turística.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/colombia/cartagena.jpg" alt="Cartagena">
+                <div class="card-body">
+                    <h3>Cartagena</h3>
+                    <p>Ciudad amurallada llena de color y arquitectura colonial.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Menú Lateral Derecho de Vuelos Seleccionados -->
+<div id="flight-drawer" class="flight-drawer">
+    <div class="drawer-header">
+    <h3>Tu Vuelo Seleccionado</h3>
+    <button class="close-drawer-btn">&times;</button>
+</div>
+    <div class="drawer-body" id="drawer-content">
+        <p>No hay ningún vuelo seleccionado todavía.</p>
+    </div>
+    <div class="drawer-footer" id="drawer-footer" style="display: none;">
+        <button id="confirm-purchase-btn" class="confirm-btn">Confirmar Compra</button>
+    </div>
+</div>
+<div id="drawer-overlay" class="drawer-overlay"></div>
+
+    <footer>
+        
+        <button class="scroll-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">Ir al inicio ↑</button>
+    </footer>
+    <script src="js/app.js"></script>
+    <script src="js/paises-data.js"></script>
+</body>
+</html>
