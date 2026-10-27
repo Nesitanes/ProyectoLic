@@ -116,8 +116,7 @@ async function fetchCountryData(countryName) {
         };
 
     } catch (error) {
-        console.warn("Aviso de red: Usando base de datos local de respaldo.", error);
-        
+                
         if (typeof paisesDB !== 'undefined' && paisesDB[searchTerm]) {
             countryData = paisesDB[searchTerm];
         } else {
@@ -176,7 +175,7 @@ async function fetchWeatherAPI(city) {
 
         weatherDesc.innerHTML = `
             <div style="display:flex; align-items:center; gap:15px; margin-top: 5px;">
-                <span style="font-size:2.2rem;">☀️</span>
+                <span style="font-size:2.2rem;"> 🌎 </span>
                 <div>
                     <h3 style="font-size: 1.4rem; margin: 0;">${tempC}°C</h3>
                     <p style="text-transform: capitalize; margin: 0;"><strong>${descClima}</strong></p>
@@ -245,7 +244,7 @@ function renderTouristPlaces(searchTerm, countryName) {
     });
 }
 
-function toggleFavorite(place, btnElement, searchTerm = null, countryName = null) {
+function toggleFavorite(place, searchTerm = null, countryName = null) {
     let favorites = JSON.parse(localStorage.getItem("pvi_favorites")) || [];
     const index = favorites.findIndex(fav => fav.title === place.title);
 
